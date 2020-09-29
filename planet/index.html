@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E A R T H</title>
+    <link rel="shortcut icon" href="img/shortcut.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/jquery.fullpage.js"></script>
+    <!--slider--------->
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    <script type="text/javascript" src="js/lightslider.js"></script>
+</head>
+
+
+<body>
+    <div id="fullpage">
+        <!--section1------------------->
+        <section>
+            <!-- navigation------------>
+            <nav>
+                <!--logo--------------->
+                <div class="logo">E A R T H Planet</div>
+                <!--right-menu-------->
+                <div class="r-menu">
+                    <a href="#">Website Design</a>
+                    <!--button------------>
+                    <button>Sign In</button>
+                </div>
+            </nav>
+
+            <!-- text------------>
+            <div class="text">
+                <div class="earth">
+                    <span>E</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>T</span>
+                    <span>H</span>
+                </div>
+                <h1>PLANET</h1>
+                <button>READ MORE</button>
+            </div>
+
+            <!--social----------->
+            <div class="social">
+                <p>Follow Me And Stay Connect With Me</p>
+                <div class="social-icons">
+                    <a href="https://vk.com/idvinegar"><i class="vk-icon"><img src="img/vk-icon.png"
+                                style="width: 40px;"></i></a>
+                    <a href="#"><i class="ins-icon"><img src="img/ins-icons.png" style="width: 30px;"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--section2------------------->
+        <section>
+            <!--heading------------>
+            <div class="explore-h">
+                <h1>Explore The World With Us</h1>
+                <!--paragraph---------->
+                <p>People do usually say that nature is our mother. It gives a person everything that is necessary for
+                    life, even though we don't always appreciate its gifts. What could be better than the warm sun,
+                    majestic mountains, and blooming trees in the spring? The world of nature is very rich and varied.
+                </p>
+            </div>
+            <!--box-container------------------->
+            <div class="box-container">
+                <ul id="autoWidth" class="cs-hidden">
+                    <li class="item-a">
+                        <!--box-1-->
+                        <div class="box-1">
+                            <p>FORESTS</p>
+                        </div>
+
+                    </li>
+                    <li class="item-b">
+                        <!--box-2-->
+                        <div class="box-2">
+                            <p>ANIMALS</p>
+                        </div>
+
+                    </li>
+                    <li class="item-c">
+                        <!--box-3-->
+                        <div class="box-3">
+                            <p>MOUNTAINS</p>
+                        </div>
+                    </li>
+                    <li class="item-d">
+                        <!--box-4-->
+                        <div class="box-4">
+                            <p>LAKES</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        <!--footer------------------------------>
+            <footer>
+                <!--copyright---------->
+                <div class="copyright">Copyright By PiterPaper 2020 | All Rights Reserved |</div>
+                <!--menu--------------->
+                <ul>
+                    <li><a href="#">UP</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </footer>
+
+        </section>
+
+
+
+    </div>
+
+    <script type="text/javascript">
+        //scroll
+        $('#fullpage').fullpage();
+
+        // slider
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
